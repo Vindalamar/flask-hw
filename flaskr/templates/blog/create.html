@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}New Series{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="title">Title</label>
+    <input name="title" id="title" value="{{ request.form['title'] }}" required>
+    <label for="body">Watched</label>
+    <div id="containedd">
+      <input type="number" name="body" id="body" class="dnd" value="{{ request.form['body'] }}" required> over
+      <input type="number" name="over" id="over" class="dnd" value="{{ request.form['over'] }}" required>
+    </div>
+    <input type="submit" value="Save">
+  </form>
+{% endblock %}
