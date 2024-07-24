@@ -1,4 +1,6 @@
-# flask-hw
+# flask
+
+university homework made using flask
 
 docker comands:
 
