@@ -1,4 +1,4 @@
-# flask
+# flask-hw
 
 university homework made using flask
 
